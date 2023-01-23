@@ -1,0 +1,13 @@
+apiVersion: v1
+Kind: Namespace
+Metadata:
+	name: my-big-app
+—
+apiVersion: v1
+kind: Pod
+Metadata:
+	name: webserver
+Spec:
+	containers:
+	- name: webserver
+	   image: nginx:latest 
